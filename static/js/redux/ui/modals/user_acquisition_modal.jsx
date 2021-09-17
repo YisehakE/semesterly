@@ -92,6 +92,7 @@ class UserAcquisitionModal extends React.Component {
             </span>
             <span>Continue with JHED*</span>
           </button>
+         
           <p className="method-details">* Exclusive to JHU students & faculty.</p>
 
           <div className="or-separator">
@@ -117,6 +118,20 @@ class UserAcquisitionModal extends React.Component {
             <span>Continue with Google</span>
           </button>
 
+          {/* ADDED MOCK BUTTON FOR INTERVIEW */}
+          <button
+            className="btn abnb-btn secondary" onClick={() => {
+              const link = document.createElement('a');
+              link.href = `https://semester.ly/press`;
+              document.body.appendChild(link);
+              link.click();
+            }}
+          >
+          <span className="img-icon">
+            <i className="fa fa-envelope-o" />
+          </span>
+          <span>Yisehak's Mock Button</span>
+          </button>
 
           {/* <button
             className="btn abnb-btn secondary eight-px-top" onClick={() => {
