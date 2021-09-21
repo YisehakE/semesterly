@@ -315,11 +315,23 @@ class UserSettingsModal extends React.Component {
                 onChange={this.changeClassYear}
               />
             </div>
+
+
+            {/* ADDED CODE FOR TASK 2 */}
+            <div classname = 'preference cf'>
+              <h3> This is your favorite number: ${this.props.userInfo.favorite_num}</h3>
+              {/* <Select 
+                name = "favorite_num"
+                value={this.props.userInfo.favorite_num}
+              />
+               */}
+            </div>
             { preferences }
             {/* { !this.state.isSigningUp ? notifications : null } */}
             { fbUpsell }
             { tos }
             { !this.state.isSigningUp ? deleteDropdown : null }
+
             <div className="button-wrapper">
               <button
                 className="signup-button" onClick={this.hide}

@@ -60,7 +60,8 @@ class Student(models.Model):
     last_name = models.CharField(max_length=255, default='', null=True)
     disabilities = models.NullBooleanField(null=True, default=False)
 
-    favorite_num = 0
+    #ADDED CODE FOR TASK 2
+    favorite_num = models.IntegerField(blank=True)
 
 
     def __str__(self):
